@@ -140,7 +140,7 @@
         /* ===== Projects Section ===== */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
         }
 
@@ -235,6 +235,20 @@
         }
 
         /* ===== Responsive ===== */
+        @media (max-width: 1200px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 per row on tablets */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+                /* 1 per row on mobile */
+            }
+        }
+
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2.5rem;
@@ -290,16 +304,21 @@
                         <p>A Laravel-based system to manage business inventory, sales, and reporting.</p>
                     </a>
                 </div>
-                
                 <div class="project-card">
                     <a href="https://github.com/afseerashraf/E-commerce">
                         <h3>E-commerce Platform</h3>
                         <p>Developed an online store using Laravel with product management and secure checkout.</p>
-
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/afseerashraf/carDeal">
+                        <h3>Car Dealing System</h3>
+                        <p>A Laravel project that allows users to browse, order, and manage car deals efficiently.</p>
                     </a>
                 </div>
             </div>
         </section>
+
 
         <!-- ===== Technologies Section ===== -->
         <section id="technologies">
