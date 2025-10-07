@@ -140,7 +140,7 @@
         /* ===== Projects Section ===== */
         .projects-grid {
             display: grid;
-            grid-template-columns:repeat(4, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
         }
 
@@ -236,16 +236,18 @@
 
         /* ===== Responsive ===== */
         @media (max-width: 1200px) {
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
-    }
-}
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+                /* 2 per row on tablets */
+            }
+        }
 
-@media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: 1fr; /* 1 per row on mobile */
-    }
-}
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+                /* 1 per row on mobile */
+            }
+        }
 
         @media (max-width: 768px) {
             header h1 {
@@ -254,6 +256,52 @@
 
             section {
                 padding: 50px 0;
+            }
+        }
+
+        /* subtle input focus animation */
+        #contactForm input:focus,
+        #contactForm textarea:focus {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 18px rgba(30, 144, 255, 0.09);
+            border-color: #1e90ff;
+        }
+
+        /* button hover animation */
+        #sendBtn {
+            background: transparent;
+            border: 2px solid #1e90ff;
+            color: #1e90ff;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all .25s ease;
+        }
+
+        #sendBtn:hover {
+            background: #1e90ff;
+            color: #fff;
+            transform: translateY(-4px) scale(1.02);
+        }
+
+        /* success / error animation */
+        #formStatus.show {
+            animation: pop .45s ease;
+        }
+
+        @keyframes pop {
+            0% {
+                transform: scale(.95);
+                opacity: 0
+            }
+
+            60% {
+                transform: scale(1.02);
+                opacity: 1
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1
             }
         }
     </style>
@@ -274,10 +322,13 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p> 
-                        Full-Stack Developer with a strong foundation in Laravel and hands-on experience building web applications. 
-                        Curious by nature, I’m always looking to expand my knowledge in IT, explore emerging technologies, and keep pace with global tech trends. 
-                        Beyond coding, I value balance—spending time with family and friends, enjoying quiet moments in nature, and recharging on my own.
+                    <p>
+                        Full-Stack Developer with a strong foundation in Laravel and hands-on experience building web
+                        applications.
+                        Curious by nature, I’m always looking to expand my knowledge in IT, explore emerging
+                        technologies, and keep pace with global tech trends.
+                        Beyond coding, I value balance—spending time with family and friends, enjoying quiet moments in
+                        nature, and recharging on my own.
                     </p>
                 </div>
                 <div class="about-image">
@@ -287,35 +338,35 @@
         </section>
 
         <!-- ===== Projects Section ===== -->
-       <section id="projects">
-    <h2>My Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <a href="https://github.com/afseerashraf/clinicManagment">
-                <h3>Clinic Management System</h3>
-                <p>Built with Laravel, managing patients, doctors, and appointments efficiently.</p>
-            </a>
-        </div>
-        <div class="project-card">
-            <a href="https://github.com/afseerashraf/BusinessManagment">
-                <h3>Business Management App</h3>
-                <p>A Laravel-based system to manage business inventory, sales, and reporting.</p>
-            </a>
-        </div>
-        <div class="project-card">
-            <a href="https://github.com/afseerashraf/E-commerce">
-                <h3>E-commerce Platform</h3>
-                <p>Developed an online store using Laravel with product management and secure checkout.</p>
-            </a>
-        </div>
-        <div class="project-card">
-            <a href="https://github.com/afseerashraf/carDeal">
-                <h3>Car Dealing System</h3>
-                <p>A Laravel project that allows users to browse, order, and manage car deals efficiently.</p>
-            </a>
-        </div>
-    </div>
-</section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="https://github.com/afseerashraf/clinicManagment">
+                        <h3>Clinic Management System</h3>
+                        <p>Built with Laravel, managing patients, doctors, and appointments efficiently.</p>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/afseerashraf/BusinessManagment">
+                        <h3>Business Management App</h3>
+                        <p>A Laravel-based system to manage business inventory, sales, and reporting.</p>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/afseerashraf/E-commerce">
+                        <h3>E-commerce Platform</h3>
+                        <p>Developed an online store using Laravel with product management and secure checkout.</p>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/afseerashraf/carDeal">
+                        <h3>Car Dealing System</h3>
+                        <p>A Laravel project that allows users to browse, order, and manage car deals efficiently.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
 
 
         <!-- ===== Technologies Section ===== -->
@@ -346,6 +397,58 @@
             </div>
         </section>
 
+        <!-- ------->
+
+  <!-- ===== Message Section (Add this where you want in your HTML) ===== -->
+    <section id="hireme" style="padding:80px 0;">
+        <h2 style="color:#1e90ff; text-align:center; margin-bottom:20px;">Hire Me / Send a Message</h2>
+
+        <div class="hire-container"
+            style="max-width:900px; margin: 0 auto; padding: 30px; border:1px solid #1e90ff; border-radius:12px; background:#0f1620;">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+                  <input type="hidden" name="access_key" value="b88c1bc2-943e-4df3-87b7-bbc571c21390">
+
+                <div class="grid"
+                    style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px;">
+                    <div class="form-group">
+                        <label for="name" style="display:block; color:#cfd8dc; margin-bottom:6px;">Name</label>
+                        <input id="name" name="name" type="text" required
+                            style="width:100%; padding:12px; border-radius:8px; border:1px solid #26303b; background:#0b1116; color:#cfd8dc; outline:none; transition:transform .25s, box-shadow .25s;" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="place" style="display:block; color:#cfd8dc; margin-bottom:6px;">Place</label>
+                        <input id="place" name="place" type="text" required
+                            style="width:100%; padding:12px; border-radius:8px; border:1px solid #26303b; background:#0b1116; color:#cfd8dc; outline:none; transition:transform .25s, box-shadow .25s;" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" style="display:block; color:#cfd8dc; margin-bottom:6px;">Phone</label>
+                        <input id="phone" name="phone" type="tel" required pattern="[\+0-9\-\(\)\s]{6,}"
+                            placeholder="+971 5x xxx xxxx"
+                            style="width:100%; padding:12px; border-radius:8px; border:1px solid #26303b; background:#0b1116; color:#cfd8dc; outline:none; transition:transform .25s, box-shadow .25s;" />
+                    </div>
+                </div>
+
+                <div style="margin-top:16px;">
+                    <label for="message" style="display:block; color:#cfd8dc; margin-bottom:6px;">Message</label>
+                    <textarea id="message" name="message" rows="6" required
+                        style="width:100%; padding:14px; border-radius:8px; border:1px solid #26303b; background:#0b1116; color:#cfd8dc; resize:vertical; outline:none; transition:transform .25s, box-shadow .25s;"></textarea>
+                </div>
+
+                <div style="margin-top:18px; display:flex; gap:12px; align-items:center;">
+                    <button id="sendBtn" type="submit" class="btn" style="border-radius:10px; padding:10px 18px;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+
+                    <div id="formStatus" aria-live="polite" style="color:#cfd8dc;"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
         <!-- ===== Contact Section ===== -->
         <section id="contact">
             <h2>Contact Me</h2>
@@ -361,11 +464,126 @@
 
     </div>
 
+  
     <!-- ===== Footer ===== -->
     <footer>
         &copy; 2025 Afseer Ashraf. All Rights Reserved.
     </footer>
 
+
+<script>
+(function () {
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+  const btn = document.getElementById('sendBtn');
+
+  // Phone validation pattern - accepts +, digits, spaces, hyphens, parentheses (min 6 digits)
+  const phonePattern = /^[+\d\-\s().]{6,}$/;
+
+  // helper to show status
+  function showStatus(message, color = '#ffcc00') {
+    status.textContent = message;
+    status.style.color = color;
+    status.classList.add('show');
+    // small pop animation class (add css for .show if not present)
+    clearTimeout(status._timer);
+    status._timer = setTimeout(() => status.classList.remove('show'), 5000);
+  }
+
+  // clear status
+  function clearStatus() {
+    status.textContent = '';
+    status.classList.remove('show');
+  }
+
+  // show field-level error (small visual)
+  function markInvalid(el, msg) {
+    el.classList.add('invalid');
+    el.setAttribute('aria-invalid', 'true');
+    if (msg) el.setCustomValidity(msg);
+  }
+
+  function clearInvalid(el) {
+    el.classList.remove('invalid');
+    el.removeAttribute('aria-invalid');
+    el.setCustomValidity('');
+  }
+
+  // simple helper to trim and check
+  function val(id) {
+    return (document.getElementById(id).value || '').trim();
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault(); // we will call form.submit() only after validation
+
+    clearStatus();
+
+    // get values
+    const name = val('name');
+    const place = val('place');
+    const phone = val('phone');
+    const message = val('message');
+
+    // clear previous invalid marks
+    ['name','place','phone','message'].forEach(id => clearInvalid(document.getElementById(id)));
+
+    // validation
+    if (!name || name.length < 2) {
+      markInvalid(document.getElementById('name'), 'Please enter your name (2+ characters).');
+      showStatus('Please enter your name (2+ characters).', '#ffcc00');
+      document.getElementById('name').focus();
+      return;
+    }
+
+    if (!place || place.length < 2) {
+      markInvalid(document.getElementById('place'), 'Please enter your place (2+ characters).');
+      showStatus('Please enter your place (2+ characters).', '#ffcc00');
+      document.getElementById('place').focus();
+      return;
+    }
+
+    if (!phone || !phonePattern.test(phone)) {
+      markInvalid(document.getElementById('phone'), 'Please enter a valid phone number.');
+      showStatus('Please enter a valid phone number.', '#ffcc00');
+      document.getElementById('phone').focus();
+      return;
+    }
+
+    if (!message || message.length < 10) {
+      markInvalid(document.getElementById('message'), 'Message should be at least 10 characters.');
+      showStatus('Message should be at least 10 characters.', '#ffcc00');
+      document.getElementById('message').focus();
+      return;
+    }
+
+    // All validation passed — show sending animation and submit the form natively
+    btn.disabled = true;
+    const originalBtnHtml = btn.innerHTML;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+    // small delay so user sees the animation (optional)
+    setTimeout(() => {
+      // Use the native submit to post to the configured action (Formspree/Web3Forms)
+      form.submit();
+      // Note: the browser will navigate to the response page (or the service's success page)
+      btn.disabled = false;
+      btn.innerHTML = originalBtnHtml;
+    }, 400);
+  });
+
+  // Optional: remove invalid styling on input
+  ['name','place','phone','message'].forEach(id => {
+    const el = document.getElementById(id);
+    el.addEventListener('input', () => {
+      clearInvalid(el);
+      if (status.textContent) clearStatus();
+    });
+  });
+})();
+</script>
+
+  
 </body>
 
 </html>
