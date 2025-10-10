@@ -10,301 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
 
-    <style>
-        /* ===== Reset & Global Styles ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Source Code Pro', monospace;
-        }
-
-
-        body {
-            background-color: #0d1117;
-            /* dark background */
-            color: #cfd8dc;
-            /* light grey text */
-            line-height: 1.6;
-        }
-
-        a {
-            color: #1e90ff;
-            /* blue links */
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* ===== Container ===== */
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: auto;
-            padding: 40px 0;
-        }
-
-        /* ===== Header / Identity ===== */
-        header {
-            text-align: center;
-            padding: 60px 0;
-        }
-
-        header h1 {
-            font-size: 3rem;
-            font-weight: 20;
-            color: #1e90ff;
-
-        }
-
-        header p {
-            font-size: 1.2rem;
-            color: #cfd8dc;
-            margin-top: 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 25px;
-            border: 2px solid #1e90ff;
-            border-radius: 30px;
-            color: #1e90ff;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background-color: #1e90ff;
-            color: #fff;
-        }
-
-        /* ===== About Section ===== */
-        section {
-            padding: 80px 0;
-        }
-
-        section h2 {
-            font-size: 2.5rem;
-            font-weight: 200;
-            color: #1e90ff;
-        }
-
-        .about-content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-        }
-
-        .about-text {
-            flex: 1 1 400px;
-        }
-
-        .about-text p {
-            font-size: 1rem;
-            color: #cfd8dc;
-        }
-
-        .about-image img {
-            width: 250px;
-            border-radius: 12%;
-            border: 3px solid #1e90ff;
-            transition: transform 0.5s ease, box-shadow 0.5s ease;
-            animation: float 3s ease-in-out infinite;
-        }
-
-        @keyframes float {
-
-            0%,
-            100% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-15px);
-            }
-        }
-
-        .about-image img:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 20px #1e90ff;
-        }
-
-        /* ===== Projects Section ===== */
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        .project-card {
-            background-color: #161b22;
-            padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #1e90ff;
-            transition: 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 15px #1e90ff;
-        }
-
-        .project-card h3 {
-            color: #1e90ff;
-            margin-bottom: 10px;
-        }
-
-        .project-card p {
-            color: #cfd8dc;
-            font-size: 0.95rem;
-        }
-
-        /* ===== Technologies Section ===== */
-        #technologies {
-            text-align: center;
-            padding: 80px 0;
-        }
-
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 30px;
-            justify-items: center;
-            margin-top: 40px;
-        }
-
-        .tech-icon {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 3rem;
-            color: #1e90ff;
-            transition: transform 0.5s ease, color 0.5s ease;
-            animation: bounce 3s infinite;
-        }
-
-        .tech-icon p {
-            margin-top: 10px;
-            font-size: 1rem;
-            color: #cfd8dc;
-        }
-
-        .tech-icon:hover {
-            transform: scale(1.2);
-            color: #fff;
-        }
-
-        /* Bounce Animation */
-        @keyframes bounce {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-
-        /* ===== Contact Section ===== */
-        .contact-info {
-            text-align: center;
-        }
-
-        .contact-info p {
-            margin: 10px 0;
-            font-size: 1rem;
-        }
-
-        /* ===== Footer ===== */
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            border-top: 1px solid #1e90ff;
-            color: #cfd8dc;
-        }
-
-        /* ===== Responsive ===== */
-        @media (max-width: 1200px) {
-            .projects-grid {
-                grid-template-columns: repeat(2, 1fr);
-                /* 2 per row on tablets */
-            }
-        }
-
-        @media (max-width: 768px) {
-            .projects-grid {
-                grid-template-columns: 1fr;
-                /* 1 per row on mobile */
-            }
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-
-            section {
-                padding: 50px 0;
-            }
-        }
-
-        /* subtle input focus animation */
-        #contactForm input:focus,
-        #contactForm textarea:focus {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 18px rgba(30, 144, 255, 0.09);
-            border-color: #1e90ff;
-        }
-
-        /* button hover animation */
-        #sendBtn {
-            background: transparent;
-            border: 2px solid #1e90ff;
-            color: #1e90ff;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all .25s ease;
-        }
-
-        #sendBtn:hover {
-            background: #1e90ff;
-            color: #fff;
-            transform: translateY(-4px) scale(1.02);
-        }
-
-        /* success / error animation */
-        #formStatus.show {
-            animation: pop .45s ease;
-        }
-
-        @keyframes pop {
-            0% {
-                transform: scale(.95);
-                opacity: 0
-            }
-
-            60% {
-                transform: scale(1.02);
-                opacity: 1
-            }
-
-            100% {
-                transform: scale(1);
-                opacity: 1
-            }
-        }
-    </style>
+   
 </head>
 
 <body>
@@ -399,6 +108,36 @@
 
         <!-- ------->
 
+        <!-- ===== New Skills & Learning Section ===== -->
+<section id="new-skills">
+  <h2>New Skills & Learning Journey</h2>
+
+  <p class="intro-text">
+    I’m currently focusing on expanding my professional skills in <strong>Cloud Technologies</strong> and
+    <strong>Agile Methodologies</strong>. Continuous learning helps me grow as a developer and adapt to modern
+    industry standards.
+  </p>
+
+  <div class="skills-progress">
+    <div class="skill">
+      <span>☁️ Cloud Technologies</span>
+      <div class="progress-bar">
+        <div class="progress cloud" style="width: 25%;"></div>
+      </div>
+      <p class="percentage">25%</p>
+    </div>
+
+    <div class="skill">
+      <span>⚙️ Agile Methodologies</span>
+      <div class="progress-bar">
+        <div class="progress agile" style="width: 40%;"></div>
+      </div>
+      <p class="percentage">40%</p>
+    </div>
+  </div>
+</section>
+
+
   <!-- ===== Message Section (Add this where you want in your HTML) ===== -->
     <section id="hireme" style="padding:80px 0;">
         <h2 style="color:#1e90ff; text-align:center; margin-bottom:20px;">Hire Me / Send a Message</h2>
@@ -450,17 +189,38 @@
 
 
         <!-- ===== Contact Section ===== -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:afseer.pro@gmail.com">afseer.pro@gmail.com</a>
-                </p>
-                <p><i class="fas fa-phone"></i> Phone: <a href="tel:+971543451692">+971 54 345 1692</a></p>
-                <p><i class="fas fa-map-marker-alt"></i> Location: Sharjah, UAE</p>
-                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/afseer-ashraf/"
-                        target="_blank">linkedin.com/in/Afseer Ashraf</a></p>
-            </div>
-        </section>
+      
+
+ <section id="contact">
+  <h2>Contact Me</h2>
+
+  <div class="contact-info">
+    <p><i class="fa-solid fa-location-dot"></i> Sharjah, UAE</p>
+    <p><i class="fa-solid fa-envelope"></i> 
+      <a href="mailto:afseer.pro@gmail.com">afseer.pro@gmail.com</a>
+    </p>
+    <p><i class="fa-solid fa-phone"></i> 
+      <a href="tel:+971543451692">+971 54 345 1692</a>
+    </p>
+  </div>
+
+  <!-- ===== Social Icons ===== -->
+  <div class="social-icons">
+    <a href="https://www.linkedin.com/in/afseer-ashraf/" target="_blank" title="LinkedIn">
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/afseerashraf" target="_blank" title="GitHub">
+      <i class="fa-brands fa-github"></i>
+    </a>
+    <a href="mailto:afseer.pro@gmail.com" title="Email">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+    <a href="https://wa.me/971543451692" target="_blank" title="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+</section>
+
 
     </div>
 
