@@ -426,7 +426,7 @@ img {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    /* Ensure no underline */
+    color: inherit;
 }
 
 .tech-item:hover {
@@ -465,6 +465,10 @@ img {
     padding: 25px;
     align-items: flex-start;
     transition: all 0.3s;
+    text-decoration: none;
+    /* Ensure no underline */
+    color: inherit;
+    /* Inherit text color */
 }
 
 .cert-card:hover {
