@@ -2,397 +2,376 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afseer Ashraf | PHP & Laravel Web Developer | Passionate About Technology</title>
-    <meta name="description" content="I'm Fullstack Developer in India, a passionate PHP & Laravel web developer creating efficient, secure, and scalable web applications. Explore my portfolio to see my innovative tech projects and creativity in action.">
-    <meta name="keywords" content="Afseer Ashraf, PHP Developer, Laravel Developer, Web Developer Portfolio, Full Stack Developer, Web Application Developer, Software Developer, Technology Enthusiast, Laravel Projects, Portfolio Website">
-    <meta name="author" content="Afseer Ashraf">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Afseer Ashraf | PHP & Laravel Web Developer | Passionate About Technology</title>
+  <meta name="description"
+    content="I'm Fullstack Developer in India, a passionate PHP & Laravel web developer creating efficient, secure, and scalable web applications. Explore my portfolio to see my innovative tech projects and creativity in action.">
+  <meta name="keywords"
+    content="Afseer Ashraf, PHP Developer, Laravel Developer, Web Developer Portfolio, Full Stack Developer, Web Application Developer, Software Developer, Technology Enthusiast, Laravel Projects, Portfolio Website">
+  <meta name="author" content="Afseer Ashraf">
 
-    <link rel="icon" href="img/AFzz.png" type="image/x-icon">
+  <link rel="icon" href="img/AFzz.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap"rel="stylesheet">
-   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 
-  
+
 </head>
 
 <body>
 
-    <!-- ===== Header / Identity ===== -->
-    <header>
-        <h1>AFSEER ASHRAF</h1>
-        <p>Exploring Emerging Technologies | Laravel Enthusiast | Full-Stack Developer</p>
-        <a href="#contact" class="btn">Contact Me</a> 
-        <a href="img/Afseer_CV.pdf"  target="_blank" class="cv-btn btn">View My CV</a>
+  <!-- ===== Navigation ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Afseer.dev</a>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#technologies" class="nav-link">Skills</a></li>
+        <li><a href="#certificates" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link btn-nav">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- ===== Hero Section ===== -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <span class="hero-subtitle">Hello, I'm</span>
+      <h1 class="hero-title">Afseer Ashraf</h1>
+      <p class="hero-description">
+        Building scalable web applications with <span class="highlight">Laravel</span> & <span class="highlight">modern
+          technologies</span>.
+        Passionate about clean code and user-centric design.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="img/Afseer_CV.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <!-- Placeholder for a coding illustration or 3D element if we had one, for now utilizing the profile image cleanly -->
+      <div class="hero-img-wrapper">
+        <img src="img/AFz.png" alt="Afseer Ashraf" class="profile-img">
+      </div>
+    </div>
+  </header>
 
-    </header>
+  <div class="container main-content">
 
-    <div class="container">
-        <!-- ===== About Section ===== -->
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Full-Stack Developer with a strong foundation in Laravel and hands-on experience building web
-                        applications.
-                        Curious by nature, I’m always looking to expand my knowledge in IT, explore emerging
-                        technologies, and keep pace with global tech trends.
-                        Beyond coding, I value balance—spending time with family and friends, enjoying quiet moments in
-                        nature, and recharging on my own.
-                    </p>
-                </div>
-                <div class="about-image">
-                    <img src="img/AFz.png" alt="Afseer Ashraf">
-                </div>
+    <!-- ===== About Section ===== -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I am a <strong>Full-Stack Developer</strong> with a strong foundation in PHP/Laravel and a passion for
+            building efficient, secure, and scalable web solutions.
+            My journey in tech is driven by curiosity—I love exploring emerging technologies and keeping up with global
+            trends.
+          </p>
+          <p>
+            Beyond the code, I value a balanced life. You'll find me spending quality time with family, enjoying nature,
+            or recharging to tackle the next big challenge.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects Section ===== -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="card-content">
+            <h3>Clinic Management</h3>
+            <p>A comprehensive Laravel solution for managing patients, doctors, and appointments efficiently.</p>
+            <div class="card-tech">
+              <span>Laravel</span><span>MySQL</span>
             </div>
-        </section>
-
-        <!-- ===== Projects Section ===== -->
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <a href="https://github.com/afseerashraf/clinicManagment">
-                        <h3>Clinic Management System</h3>
-                        <p>Built with Laravel, managing patients, doctors, and appointments efficiently.</p>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="https://github.com/afseerashraf/BusinessManagment">
-                        <h3>Business Management App</h3>
-                        <p>A Laravel-based system to manage business inventory, sales, and reporting.</p>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="https://github.com/afseerashraf/E-commerce">
-                        <h3>E-commerce Platform</h3>
-                        <p>Developed an online store using Laravel with product management and secure checkout.</p>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="https://github.com/afseerashraf/carDeal">
-                        <h3>Car Dealing System</h3>
-                        <p>A Laravel project that allows users to browse, order, and manage car deals efficiently.</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- ===== Technologies Section ===== -->
-        <section id="technologies">
-            <h2>Technologies I Use</h2>
-            <div class="tech-grid">
-                <div class="tech-icon"><i class="fab fa-php"></i>
-                   <a href="https://www.php.net/manual/en/"><p>PHP</p></a> 
-                </div>
-                <div class="tech-icon"><i class="fab fa-js-square"></i>
-                   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"> <p>JavaScript</p></a>
-                </div>
-                <div class="tech-icon"><i class="fas fa-database"></i>
-                    <a href="https://www.mysql.com/"><p>MySQL</p></a>
-                </div>
-                <div class="tech-icon"><i class="fab fa-laravel"></i>
-                   <a href="https://laravel.com/docs/12.x/pint"> <p>Laravel</p></a>
-                </div>
-                <div class="tech-icon"><i class="fab fa-git-alt"></i>
-                 <a href="https://git-scm.com/">  <p>Git</p></a> 
-                </div>
-                <div class="tech-icon"><i class="fab fa-github"></i>
-                    <a href="https://github.com/"><p>GitHub</p></a>
-                </div>
-                <div class="tech-icon"><i class="fas fa-paper-plane"></i>
-                   <a href="https://www.postman.com/"><p>Postman</p></a> 
-                </div>
-            </div>
-        </section>
-
-        <!-- ------->
-
-        <!-- Certificates -->
-
-       <section id="certificates">
-        <h2>Education & Certificate</h2>
-        <div class="projects-grid">
-
-          <div class="project-card">
-            <div class="cert-icon" style="font-size: 40px; color:#1e90ff; margin-bottom: 15px;">
-              <i class="fas fa-graduation-cap"></i>
-
-            </div>
-            <h3>Bachelor of Computer Application (BCA)</h3>
-            <a href="https://uoc.ac.in/"><p><strong>University of Calicut</strong></p></a>
-            <p style="font-size: 0.85rem; color: #cfd8dc;">Foundational studies in computer Science, Data Structure, and Software Engineering</p>
+            <a href="https://github.com/afseerashraf/clinicManagment" class="card-link" target="_blank">View Code <i
+                class="fab fa-github"></i></a>
           </div>
-
-          <div class="project-card">
-            <div class="cert-icon" style="font-size: 40px; color:#1e90ff; margin-bottom: 15px;">
-              <i class="fas fa-laptop-code"></i>
-
+        </div>
+        <div class="project-card">
+          <div class="card-content">
+            <h3>Business Manager</h3>
+            <p>Streamline business operations with inventory tracking, sales management, and detailed reporting.</p>
+            <div class="card-tech">
+              <span>PHP</span><span>Laravel</span>
             </div>
-            <h3>Full-stack Development Internship</h3>
-           <a href="https://doctosmart.com/index.html"> <p><strong>Doctosmart pvt. Ltd</strong></p> </a>
-            <p style="font-size: 0.85rem; color: #cfd8dc;">Specialized in Laravel Framework. Gained hands-on experience in building healthcare-related web solutions.</p>
+            <a href="https://github.com/afseerashraf/BusinessManagment" class="card-link" target="_blank">View Code <i
+                class="fab fa-github"></i></a>
           </div>
-
-          <div class="project-card" style="border: 1px dashed #1e90ff; opacity: 0.8;">
-            <div class="cert-icon" style="font-size: 40px; color: #ffcc00; margin-bottom: 15px;">
-              <i class="fas fa-cloud"></i>
-
+        </div>
+        <div class="project-card">
+          <div class="card-content">
+            <h3>E-commerce Store</h3>
+            <p>A secure online store featuring product management, cart functionality, and secure checkout processes.
+            </p>
+            <div class="card-tech">
+              <span>Laravel</span><span>Payment Gateway</span>
             </div>
+            <a href="https://github.com/afseerashraf/E-commerce" class="card-link" target="_blank">View Code <i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="card-content">
+            <h3>Car Deal System</h3>
+            <p>Platform for browsing, ordering, and managing car deals with an intuitive user interface.</p>
+            <div class="card-tech">
+              <span>Laravel</span><span>Bootstrap</span>
+            </div>
+            <a href="https://github.com/afseerashraf/carDeal" class="card-link" target="_blank">View Code <i
+                class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Technologies Section ===== -->
+    <section id="technologies" class="section">
+      <div class="section-header">
+        <h2>Tech Stack</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="tech-grid">
+        <a href="https://www.php.net/manual/en/" target="_blank" class="tech-item">
+          <i class="fab fa-php"></i>
+          <span>PHP</span>
+        </a>
+        <a href="https://laravel.com/docs/" target="_blank" class="tech-item">
+          <i class="fab fa-laravel"></i>
+          <span>Laravel</span>
+        </a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tech-item">
+          <i class="fab fa-js"></i>
+          <span>JavaScript</span>
+        </a>
+        <a href="https://www.mysql.com/" target="_blank" class="tech-item">
+          <i class="fas fa-database"></i>
+          <span>MySQL</span>
+        </a>
+        <a href="https://git-scm.com/" target="_blank" class="tech-item">
+          <i class="fab fa-git-alt"></i>
+          <span>Git</span>
+        </a>
+        <a href="https://github.com/" target="_blank" class="tech-item">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://www.postman.com/" target="_blank" class="tech-item">
+          <i class="fas fa-paper-plane"></i>
+          <span>Postman</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Education & Certificates ===== -->
+    <section id="certificates" class="section">
+      <div class="section-header">
+        <h2>Education & Certs</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="cert-details">
+            <h3>Bachelor of Computer Application</h3>
+            <span class="cert-org">University of Calicut</span>
+            <p>Foundations in CS, Data Structures, and Software Engineering.</p>
+          </div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="cert-details">
+            <h3>Full-stack Internship</h3>
+            <span class="cert-org">Doctosmart Pvt. Ltd</span>
+            <p>Hands-on Laravel experience building healthcare web solutions.</p>
+          </div>
+        </div>
+        <div class="cert-card highlight-cert">
+          <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+          <div class="cert-details">
             <h3>Cloud Computing</h3>
-            <p><strong>Professional Cerification</strong></p>
-          <p style="font-size: 0.85rem; color: #cfd8dc;">Focus on AWS deployment, server managment, and scalable cloud architecture</p>
-          <span style="display:inline-block; margin-top:20px; font-size: 0.75rem; background:#1e90ff; color:#fff; padding:2px 8px; border-radius:4px;">In Progress</span>
+            <span class="cert-org">Professional Certification</span>
+            <p>AWS deployment, server management, and scalable architecture.</p>
+            <span class="status-badge">In Progress</span>
           </div>
         </div>
-
-       </section>
-
-        <!--  -->
-
-        <!-- ===== New Skills & Learning Section ===== -->
-<section id="new-skills">
-  <h2>New Skills & Learning Journey</h2>
-
-  <p class="intro-text">
-    I’m currently focusing on expanding my professional skills in <strong>Cloud Technologies</strong> and
-    <strong>Agile Methodologies</strong>. Continuous learning helps me grow as a developer and adapt to modern
-    industry standards.
-  </p>
-
-  <div class="skills-progress">
-    <div class="skill">
-      <span>☁️ Cloud Technologies</span>
-      <div class="progress-bar">
-        <div class="progress cloud" style="width: 25%;"></div>
       </div>
-      <p class="percentage">25%</p>
-    </div>
-
-    <div class="skill">
-      <span>⚙️ Agile Methodologies</span>
-      <div class="progress-bar">
-        <div class="progress agile" style="width: 40%;"></div>
-      </div>
-      <p class="percentage">40%</p>
-    </div>
-  </div>
-</section>
-
-
-  <!-- ===== Message Section (Add this where you want in your HTML) ===== -->
-    <section id="hireme" style="padding:80px 0;">
-        <h2 style="color:#1e90ff; text-align:center; margin-bottom:20px;">Hire Me / Send a Message</h2>
-
-        <div class="hire-container"
-            style="max-width:900px; margin: 0 auto; padding: 30px; border:1px solid #1e90ff; border-radius:12px; background:#0f1620;">
-            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
-                  <input type="hidden" name="access_key" value="b88c1bc2-943e-4df3-87b7-bbc571c21390">
-
-                <div class="grid"
-                    style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px;">
-                    <div class="form-group">
-                        <label for="name" style="display:block; color:#cfd8dc; margin-bottom:6px;">Name</label>
-                        <input id="name" name="name" type="text" required
-                            style="width:100%; padding:12px; border-radius:8px; border:1px solid #26303b; background:#0b1116; color:#cfd8dc; outline:none; transition:transform .25s, box-shadow .25s;" />
-                    </div>
-
-                    <div class="form-group">
-                        <label for="place" style="display:block; color:#cfd8dc; margin-bottom:6px;">Place</label>
-                        <input id="place" name="place" type="text" required
-                            style="width:100%; padding:12px; border-radius:8px; border:1px solid #26303b; background:#0b1116; color:#cfd8dc; outline:none; transition:transform .25s, box-shadow .25s;" />
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone" style="display:block; color:#cfd8dc; margin-bottom:6px;">Phone</label>
-                        <input id="phone" name="phone" type="tel" required pattern="[\+0-9\-\(\)\s]{6,}"
-                            placeholder="+971 5x xxx xxxx"
-                            style="width:100%; padding:12px; border-radius:8px; border:1px solid #26303b; background:#0b1116; color:#cfd8dc; outline:none; transition:transform .25s, box-shadow .25s;" />
-                    </div>
-                </div>
-
-                <div style="margin-top:16px;">
-                    <label for="message" style="display:block; color:#cfd8dc; margin-bottom:6px;">Message</label>
-                    <textarea id="message" name="message" rows="6" required
-                        style="width:100%; padding:14px; border-radius:8px; border:1px solid #26303b; background:#0b1116; color:#cfd8dc; resize:vertical; outline:none; transition:transform .25s, box-shadow .25s;"></textarea>
-                </div>
-
-                <div style="margin-top:18px; display:flex; gap:12px; align-items:center;">
-                    <button id="sendBtn" type="submit" class="btn" style="border-radius:10px; padding:10px 18px;">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-
-                    <div id="formStatus" aria-live="polite" style="color:#cfd8dc;"></div>
-                </div>
-            </form>
-        </div>
     </section>
 
 
+    <!-- ===== Skills Progress ===== -->
+    <section id="skills-progress" class="section">
+      <div class="section-header">
+        <h2>Current Focus</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="section-intro">Expanding my capabilities in Cloud and Agile methodologies.</p>
 
-        <!-- ===== Contact Section ===== -->
-      
+      <div class="progress-container">
+        <div class="progress-item">
+          <div class="progress-label">
+            <span><i class="fas fa-cloud"></i> Cloud Technologies</span>
+            <span>25%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 25%;"></div>
+          </div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-label">
+            <span><i class="fas fa-sync-alt"></i> Agile Methodologies</span>
+            <span>40%</span>
+          </div>
+          <div class="progress-track">
+            <div class="progress-fill" style="width: 40%;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
- <section id="contact">
-  <h2>Contact Me</h2>
+    <!-- ===== Contact Section ===== -->
+    <section id="contact" class="section contact-section">
+      <div class="contact-container">
+        <div class="contact-info-box">
+          <h3>Let's Connect</h3>
+          <p>Open for opportunities and collaborations.</p>
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Sharjah, UAE</span>
+            </div>
+            <div class="contact-detail-item">
+              <a href="mailto:afseer.pro@gmail.com">
+                <i class="fas fa-envelope"></i>
+                <span>afseer.pro@gmail.com</span>
+              </a>
+            </div>
+            <div class="contact-detail-item">
+              <a href="tel:+971543451692">
+                <i class="fas fa-phone-alt"></i>
+                <span>+971 54 345 1692</span>
+              </a>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/afseer-ashraf/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/afseerashraf" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/971543451692" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
 
-  <div class="contact-info">
-    <p><i class="fa-solid fa-location-dot"></i> Sharjah, UAE</p>
-    <p><i class="fa-solid fa-envelope"></i> 
-      <a href="mailto:afseer.pro@gmail.com">afseer.pro@gmail.com</a>
-    </p>
-    <p><i class="fa-solid fa-phone"></i> 
-      <a href="tel:+971543451692">+971 54 345 1692</a>
-    </p>
+        <div class="contact-form-box">
+          <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="b88c1bc2-943e-4df3-87b7-bbc571c21390">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="place">Location</label>
+              <input type="text" id="place" name="place" required placeholder="City, Country">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required placeholder="+971 ...">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="How can I help you?"></textarea>
+            </div>
+            <button type="submit" id="sendBtn" class="btn btn-primary btn-block">Send Message <i
+                class="fas fa-paper-plane"></i></button>
+            <div id="formStatus" class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </div>
 
-  <!-- ===== Social Icons ===== -->
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/afseer-ashraf/" target="_blank" title="LinkedIn">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/afseerashraf" target="_blank" title="GitHub">
-      <i class="fa-brands fa-github"></i>
-    </a>
-    <a href="mailto:afseer.pro@gmail.com" title="Email">
-      <i class="fa-solid fa-envelope"></i>
-    </a>
-    <a href="https://wa.me/971543451692" target="_blank" title="WhatsApp">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
-  </div>
-</section>
-
-
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 Afseer Ashraf. All Rights Reserved.</p>
     </div>
+  </footer>
 
-  
-    <!-- ===== Footer ===== -->
-    <footer>
-        &copy; 2026 Afseer Ashraf. All Rights Reserved.
-    </footer>
+  <script>
+    // Mobile Menu Toggle
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navMenu = document.querySelector('.nav-menu');
 
-
-<script>
-(function () {
-  const form = document.getElementById('contactForm');
-  const status = document.getElementById('formStatus');
-  const btn = document.getElementById('sendBtn');
-
-  // Phone validation pattern - accepts +, digits, spaces, hyphens, parentheses (min 6 digits)
-  const phonePattern = /^[+\d\-\s().]{6,}$/;
-
-  // helper to show status
-  function showStatus(message, color = '#ffcc00') {
-    status.textContent = message;
-    status.style.color = color;
-    status.classList.add('show');
-    // small pop animation class (add css for .show if not present)
-    clearTimeout(status._timer);
-    status._timer = setTimeout(() => status.classList.remove('show'), 5000);
-  }
-
-  // clear status
-  function clearStatus() {
-    status.textContent = '';
-    status.classList.remove('show');
-  }
-
-  // show field-level error (small visual)
-  function markInvalid(el, msg) {
-    el.classList.add('invalid');
-    el.setAttribute('aria-invalid', 'true');
-    if (msg) el.setCustomValidity(msg);
-  }
-
-  function clearInvalid(el) {
-    el.classList.remove('invalid');
-    el.removeAttribute('aria-invalid');
-    el.setCustomValidity('');
-  }
-
-  // simple helper to trim and check
-  function val(id) {
-    return (document.getElementById(id).value || '').trim();
-  }
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault(); // we will call form.submit() only after validation
-
-    clearStatus();
-
-    // get values
-    const name = val('name');
-    const place = val('place');
-    const phone = val('phone');
-    const message = val('message');
-
-    // clear previous invalid marks
-    ['name','place','phone','message'].forEach(id => clearInvalid(document.getElementById(id)));
-
-    // validation
-    if (!name || name.length < 2) {
-      markInvalid(document.getElementById('name'), 'Please enter your name (2+ characters).');
-      showStatus('Please enter your name (2+ characters).', '#ffcc00');
-      document.getElementById('name').focus();
-      return;
-    }
-
-    if (!place || place.length < 2) {
-      markInvalid(document.getElementById('place'), 'Please enter your place (2+ characters).');
-      showStatus('Please enter your place (2+ characters).', '#ffcc00');
-      document.getElementById('place').focus();
-      return;
-    }
-
-    if (!phone || !phonePattern.test(phone)) {
-      markInvalid(document.getElementById('phone'), 'Please enter a valid phone number.');
-      showStatus('Please enter a valid phone number.', '#ffcc00');
-      document.getElementById('phone').focus();
-      return;
-    }
-
-    if (!message || message.length < 10) {
-      markInvalid(document.getElementById('message'), 'Message should be at least 10 characters.');
-      showStatus('Message should be at least 10 characters.', '#ffcc00');
-      document.getElementById('message').focus();
-      return;
-    }
-
-    // All validation passed — show sending animation and submit the form natively
-    btn.disabled = true;
-    const originalBtnHtml = btn.innerHTML;
-    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-
-    // small delay so user sees the animation (optional)
-    setTimeout(() => {
-      // Use the native submit to post to the configured action (Formspree/Web3Forms)
-      form.submit();
-      // Note: the browser will navigate to the response page (or the service's success page)
-      btn.disabled = false;
-      btn.innerHTML = originalBtnHtml;
-    }, 400);
-  });
-
-  // Optional: remove invalid styling on input
-  ['name','place','phone','message'].forEach(id => {
-    const el = document.getElementById(id);
-    el.addEventListener('input', () => {
-      clearInvalid(el);
-      if (status.textContent) clearStatus();
+    mobileMenu.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      navMenu.classList.toggle('active');
     });
-  });
-})();
-</script>
 
-  
+    document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      navMenu.classList.remove('active');
+    }));
+
+    // Contact Form Logic (Preserved and adapted)
+    (function () {
+      const form = document.getElementById('contactForm');
+      const status = document.getElementById('formStatus');
+      const btn = document.getElementById('sendBtn');
+      const phonePattern = /^[+\d\-\s().]{6,}$/;
+
+      function showStatus(message, type = 'error') {
+        status.textContent = message;
+        status.className = 'form-status ' + type;
+        setTimeout(() => status.textContent = '', 5000);
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = form.name.value.trim();
+        const phone = form.phone.value.trim();
+        const message = form.message.value.trim();
+
+        if (!name || name.length < 2) {
+          showStatus('Name is too short.'); return;
+        }
+        if (!phone || !phonePattern.test(phone)) {
+          showStatus('Invalid phone number.'); return;
+        }
+        if (!message || message.length < 5) { // Relaxed slightly
+          showStatus('Message is too short.'); return;
+        }
+
+        btn.disabled = true;
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+        setTimeout(() => {
+          form.submit();
+          // In a real SPA we would handle fetch here, but form.submit() redirects
+        }, 800);
+      });
+    })();
+  </script>
 </body>
 
 </html>
